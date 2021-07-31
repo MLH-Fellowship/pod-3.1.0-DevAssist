@@ -1,3 +1,31 @@
+  <h1>StackOverflow Automatic Error Check</h1>
+  <p>
+    Tired of copying the errors from terminal and searching around for each and every small or big errors on StackOverflow??
+    We have got you covered!! Just upload your Python script here and relax.
+    It will search for errors in your script and will automatically open the corresponding StackOverflow solution blogs in your browser
+    for each and every error in your code.
+  </p>
+  <ol>
+    <li>
+      firstly rename the file as "test.py" for which you want to check the errors.
+    </li>
+    <li>
+      then upload the "test.py" file using the choose file button.
+    </li>
+    <li>
+      then lastly click on the submit button and you are ready to go!!
+    </li>
+  </ol>
+  
+<h3>Errors in your code are as following:</h3>
+<p>
+  <ul>
+    {% for i in result %}
+    <li>{{i}}</li>
+    {% endfor %}
+  </ul>
+</p>
+
 <div>
     <form method="POST" action="/search" enctype="multipart/form-data">
         <p><input type="file" name="file"></p>
