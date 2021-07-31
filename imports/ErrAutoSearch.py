@@ -33,7 +33,7 @@ def get_urls(json_dict):
         webbrowser.open(i)
 
 
-if __name__ == "__main__":
+def autoSearch():
     out, err = execute_and_return("python test.py")
     error_message = err.decode("utf-8").strip().split("\r\n")[-1]
     print(error_message)
@@ -49,3 +49,7 @@ if __name__ == "__main__":
         get_urls(json)
     else:
         print("No errors")
+
+
+def main_func():
+    autoSearch()
