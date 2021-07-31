@@ -1,0 +1,102 @@
+body {
+    background-color:#f5eee5;
+    color:black;
+    font-family:helvetica;
+    }  
+#content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width:100%;
+      margin:auto;
+      margin-bottom: 70px;
+    }
+.glass {
+      backdrop-filter:blur(10px);
+      background:rgba(255,255,255,.15);
+      border:solid 1.5px rgba(255,255,255,.15);
+      border-radius:5px;
+      box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.15);
+      width:85%;
+      padding: 30px 80px;
+      text-align: center;
+      height:auto;
+      color:black;
+    }
+hr{
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #ccc;
+  margin: 1em 0; 
+  padding: 0;
+    }
+p{
+   font-size: larger;
+   padding: 5px 5px;
+}
+h1{
+  font-size: xx-large;
+    }
+.myprogress {
+        min-width: 100%;
+        margin: 0px auto;
+        text-align: center;
+        margin-bottom: 60px !important;
+        }
+.myprogress .circle,
+        .myprogress .bar {
+        display: inline-block;
+        background: #dec8ab;
+        width: 220px; 
+        height: 220px;
+        border-radius: 50%;
+        border: 2px solid black;
+        }
+.myprogress .bar {
+        position: relative;
+        width: 80px;
+        height: 2px;
+        top: -5px;
+        border: 0px solid #d5d5da;
+        background:#000;
+        }
+.myprogress .circle .label {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 30px;
+        border-radius: 40px;
+        font-size: 24px;
+        }
+.myprogress .circle .title {
+        color: black;
+        font-size: 24px;
+        line-height: 30px;
+        position: relative;
+        top: 25%;
+        transform: translateY(-50%);
+        }
+.container, .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+.button {
+            width: 100px;
+            height: 50px;
+            background: #f1e7da;
+            border-radius: 11px;
+            text-decoration:none;
+            color:#0B0B0B;
+            font-family: 'Open Sans', sans-serif;
+          font-size: 22px;
+            box-shadow: inset 0 0 15px rgba(66, 66, 66, 0), inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(58, 58, 58, 0.15), -7px -7px 20px white, inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 399ms ease-in-out;
+          }
+.button:hover {
+            box-shadow: inset 7px 7px 15px rgba(66, 66, 66, 0.15), inset -7px -7px 20px white, 0px 0px 4px rgba(255, 255, 255, 0.2);
+            color:#676767;
+            cursor: pointer;
+          }
+        
