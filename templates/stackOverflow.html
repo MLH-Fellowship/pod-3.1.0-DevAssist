@@ -1,34 +1,66 @@
-  <h1>StackOverflow Automatic Error Check</h1>
-  <p>
-    Tired of copying the errors from terminal and searching around for each and every small or big errors on StackOverflow??
-    We have got you covered!! Just upload your Python script here and relax.
-    It will search for errors in your script and will automatically open the corresponding StackOverflow solution blogs in your browser
-    for each and every error in your code.
-  </p>
-  <ol>
-    <li>
-      firstly rename the file as "test.py" for which you want to check the errors.
-    </li>
-    <li>
-      then upload the "test.py" file using the choose file button.
-    </li>
-    <li>
-      then lastly click on the submit button and you are ready to go!!
-    </li>
-  </ol>
-  
-<h3>Errors in your code are as following:</h3>
-<p>
-  <ul>
-    {% for i in result %}
-    <li>{{i}}</li>
-    {% endfor %}
-  </ul>
-</p>
+<!DOCTYPE html>
+<html>
 
-<div>
-    <form method="POST" action="/search" enctype="multipart/form-data">
-        <p><input type="file" name="file"></p>
-        <p><input type="submit" value="Submit"></p>
-      </form>
-</div>
+<head>
+    <title>Name</title>
+    <link rel="stylesheet" href="../static/css/card1.css">
+</head>
+
+<body>
+    <div id=content>
+        <div class="glass">
+            <h1>StackOverflow Automatic Error Check</h1>
+            <hr>
+            <p>Tired of copying the errors from terminal and searching around for each and every small or big errors on
+                StackOverflow??
+                We have got you covered!! Just upload your Python script here and relax.
+                It will search for errors in your script and will automatically open the corresponding StackOverflow
+                solution blogs in your browser
+                for each and every error in your code.</p>
+        </div>
+    </div>
+    <center>
+        <h1>Steps to follow</h1>
+        <hr style="width:430px">
+    </center>
+    <div class="myprogress">
+        <div class="circle">
+            <span class="title">Rename the file as "test.py" for which you want to check the errors.</span>
+        </div>
+        <span class="bar done"></span>
+        <div class="circle">
+            <span class="title">Then upload the "test.py" file using the Choose file button.</span>
+        </div>
+        <span class="bar half"></span>
+        <div class="circle">
+            <span class="title">Lastly click on the SUBMIT button and you are ready to go!!</span>
+        </div>
+
+    </div>
+
+    <div id=content style="width:30%">
+        <div class="glass">
+            <form method="POST" action="/search" enctype="multipart/form-data">
+                <p><input type="file" name="file" id="choose"></p>
+                <div class='container'>
+                    <input type="submit" value="Submit" class="button">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div id=content>
+        <div class="glass">
+            <h1>Errors in your code are ❌</h1>
+            <hr>
+            <p>
+            <ul>
+                {% for i in result %}
+                <li>{{i}}</li>
+                {% endfor %}
+            </ul>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
