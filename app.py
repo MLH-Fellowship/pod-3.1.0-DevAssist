@@ -20,13 +20,12 @@ def index():
     return render_template('landingPage.html')
 
 
-@app.route('/errcheck', methods=['GET'])
-def ErrCheck():
-    main_func()
-    return redirect('/')
+@app.route('/autoErrCheck')
+def fileupload():
+    return render_template('stackOverflow.html')
 
 
-@app.route('/search', methods=['POST'])
+@app.route('/search', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
         if 'file' not in request.files:
@@ -39,9 +38,10 @@ def search():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            main_func()
-            return redirect('/')
-    return redirect('/')
+            result = main_func()
+            print(result)
+            return render_template('stackOverflow.html', result=result)
+    return redirect('/autoErrCheck')
 
 # all the routes go here
 
