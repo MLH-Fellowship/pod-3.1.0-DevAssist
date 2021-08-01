@@ -6,7 +6,6 @@ $(function () {
         if (val.list1.length > 0)
             blockList = val.list1;
         console.log("val.list1 :" + val.list1);
-        //displaying the old items
         for (var i = 0; i < blockList.length; i++) {
             addBlockedSite(blockList[i]);
         }
@@ -15,11 +14,9 @@ $(function () {
 
     $('#addButtonTask').click(function () {
         var newBlockedSite = $('#taskInput').val();
-        //adding the new item to tasklist array
         blockList.push(newBlockedSite);
         console.log("blockList under click :" + blockList);
         addBlockedSite(newBlockedSite);
-        //adding the new list back to chrome storage
         chrome.storage.sync.set({
             'list1': blockList
         })
