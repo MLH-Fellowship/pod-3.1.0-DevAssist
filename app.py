@@ -24,6 +24,9 @@ def index():
 def fileupload():
     return render_template('stackOverflow.html')
 
+@app.route('/websiteBlocker')
+def websiteBlocker():
+    return render_template('websiteBlocker.html')
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
