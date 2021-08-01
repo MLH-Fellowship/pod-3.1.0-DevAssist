@@ -1,8 +1,0 @@
-Steps to use the Website Blocker Extension
-1. Download the zip file and extract the extension.
-2. Go to the extensions page in google chrome under more options.
-3. Select developer mode and click on load unpacked.
-4. Navigate to the extracted extension folder and select it.
-5. Right click on the extension and select options to access the main options page.
-6. To block a webisite, type into the input and click on add.
-7. To unblock select the delete option in the list of blocked websites.
