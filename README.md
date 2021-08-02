@@ -22,4 +22,4 @@ More features to be added.
 - HTML/CSS (Bootstrap)
 
 ## Development
-Clone the repository to your local machine using ```git clone https://github.com/OfiliPatrick/pod-3.1.0-WebsiteMonitor.git```
+Clone the repository to your local machine using ```https://github.com/MLH-Fellowship/pod-3.1.0-WebsiteMonitor.git```
