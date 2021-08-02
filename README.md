@@ -1,27 +1,25 @@
-# Explorer Template
+# DEVASSIST
 
-This is a template to help you get started with your projects. Find out more information inside of the Fello Handbook.
+## Objective
+Devaasist helps developers to increase thier productivity while prgramming and development. It is a portal whcih provides different tools to the developers which can help significantly in easing thier work and increasing efficiency too. 
 
-This template has a `main` and `staging` branch already setup. 
+## Features
+- ### Website Monitoring 
+Developers often spend a lot of time on the internet and sometimes we end up wasting our time instead of focusing on the task,we actually opened the browser for.This feature helps to improve the productivity of developers by keeping track of his/her website visits and also potentially blocking time-wasting or distracting websites which user wants.
 
-- Code will only be merged into `main` once your Pod Leader has reviewed your code. 
-- During the week, you'll merge code into `staging`.
+- ### StackOverflow automatic error search.
+It is boring and time-taking when there are too many errors in the code and you have to debug each and every error one by one.This feature eases the process a lot.It allows user to upload the file and displays all the errors in the code along with automatically opening the StackOverflow solution blogs for those corresponding errors in the browser itself.
 
-## Useful commands
+- ### Screen Time Monitoring
+Spending too much time infront of the screen affects developer's health a lot.This feature monitors the time spent by the user at different websites while recording the screentime and allows user to set the time-interval after which he wants to be alerted to take a break from screen, inorder to maintain balance between health and work.
 
-Switch branches:
-```
-git checkout <branch-name>
-```
+More features to be added.
 
-Make new branch and switch to it:
-```
-git checkout -b <branch-name>
-```
+## Tech Stacks used
+- Python (Flask framework)
+- Javascript
+- StackOverflow API
+- HTML/CSS (Bootstrap)
 
-I'd recommend using the GitHub CLI for reviewing Pull Requests, making Pull Requests and making Issues.
-
-Download it with Homebrew:
-```
-brew install gh
-```
+## Development
+Clone the repository to your local machine using ```https://github.com/MLH-Fellowship/pod-3.1.0-WebsiteMonitor.git```
