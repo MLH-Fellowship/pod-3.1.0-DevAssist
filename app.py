@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, send_from_directory, request
+from flask import Flask, render_template, redirect, url_for, send_file, request
 from imports.ErrAutoSearch import main_func
 from werkzeug.utils import secure_filename
 import os
@@ -24,9 +24,11 @@ def index():
 def fileupload():
     return render_template('stackOverflow.html')
 
+
 @app.route('/websiteBlocker')
 def websiteBlocker():
     return render_template('websiteBlocker.html')
+
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
@@ -46,7 +48,11 @@ def search():
             return render_template('stackOverflow.html', result=result)
     return redirect('/autoErrCheck')
 
-# all the routes go here
+
+@app.route('/download')
+def download_file():
+    path = "blocker.zip"
+    return send_file(path, as_attachment=True)
 
 
 if __name__ == '__main__':
