@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+      --clr: #f5eee5;
+  }
+  
+  *:focus {
+    outline: 0;
+  }
+  
+  html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  body {
+      background-color: var(--clr);
+      align-items: center;
+      display: flex;
+      justify-content: center;
+  }
+  h1{
+    font-family: consolas;
+    font-size: xx-large;
+  }
+  p{
+      font-size: 22px;
+      line-height: 30px;
+  }
+  .container {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+  }
+.container .box {
+      background-color: var(--clr); 
+      text-align: center;
+      border-radius: 15px;
+      color: black;
+      padding:25px 25px;
+      font-size: 2em;
+      justify-content: center;
+      margin: 30px;
+      position: relative;
+      width: 100%;
+  }
+.container .box.shadow-2 {
+      width:45% !important;
+      box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                              15px 15px 15px rgba(0, 0, 0, 0.1),
+                              -10px -10px 10px rgba(255, 255, 255, 0.2) inset,
+                              15px 15px 15px rgba(0, 0, 0, 0.1) inset;
+  }
+.container .box.shadow-4 {
+      border: 10px solid var(--clr);
+      box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                              15px 15px 15px rgba(0, 0, 0, 0.1),
+                              -10px -10px 10px rgba(255, 255, 255, 0.2) inset,
+                              15px 15px 15px rgba(0, 0, 0, 0.1) inset;
+  }
+hr{
+    display: block; 
+    height: 2px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    margin: 1em 0; 
+    padding: 0;
+      }
+ul li{
+          font-size: 20px;
+          line-height: 30px;
+          text-align: start;
+      }
+ul{
+        padding-left: 50px !important;
+      }
+@media (max-width:425px){
+          ul{
+              padding-left: 30px !important;
+          }
+          .container .box.shadow-2 {
+              width:100% !important;
+          }
+        }
+button{
+            height: 70px;
+            width: 150px;
+            background-color:#dec8ab ;
+            box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+            15px 15px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 20px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: large;
+        }
+a{
+    text-decoration: none;
+    color: black;     
+        }
