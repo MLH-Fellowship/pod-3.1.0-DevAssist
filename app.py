@@ -24,9 +24,16 @@ def messageRecived():
 def index():
     return render_template('landingPage.html')
 
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+
 @app.route('/team')
 def team():
     return render_template('team.html')
+
 
 @app.route('/autoErrCheck')
 def fileupload():
@@ -37,9 +44,11 @@ def fileupload():
 def websiteBlocker():
     return render_template('websiteBlocker.html')
 
+
 @app.route('/boilerplateGenerator')
 def boilerplateGenerator():
     return render_template('boilerplateGenerator.html')
+
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
@@ -65,24 +74,39 @@ def download_file():
     path = "blocker.zip"
     return send_file(path, as_attachment=True)
 
+
 @app.route('/react-flask')
 def download_file_1():
     path = "boilerplates/react-flask-boilerplate.zip"
     return send_file(path, as_attachment=True)
+
 
 @app.route('/react-node')
 def download_file_2():
     path = "boilerplates/react-node-boilerplate.zip"
     return send_file(path, as_attachment=True)
 
+
 @app.route('/react-django')
 def download_file_3():
     path = "boilerplates/react-django-boilerplate.zip"
     return send_file(path, as_attachment=True)
 
+
 @app.route('/devchat')
 def grpchat():
     return render_template('devChat.html')
+
+
+@app.route('/webmon')
+def webmon():
+    return render_template('website_monitor.html')
+
+
+@app.route('/downloadWm')
+def download():
+    path = "screentime.zip"
+    return send_file(path, as_attachment=True)
 
 
 @socketio.on('my event')
