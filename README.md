@@ -40,7 +40,7 @@ More features to be added.
  
 ## MLH Pre-Fellowship( Summer 2021)
 
-> This is a hackathon project made by MLH Fellows(Summer 2012) - Pod 3.1.0 i.e. Recursive Rhino - Team 3
+> This is a hackathon project made by MLH Fellows - Pod 3.1.0 i.e. Recursive Rhinos - Team 3
 
 [![MLH Fellowship](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_photos/001/113/145/datas/full_width.jpg)](https://github.com/MLH-Fellowship)
 
