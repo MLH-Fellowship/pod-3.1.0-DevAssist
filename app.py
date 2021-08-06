@@ -24,6 +24,9 @@ def messageRecived():
 def index():
     return render_template('landingPage.html')
 
+@app.route('/team')
+def team():
+    return render_template('team.html')
 
 @app.route('/autoErrCheck')
 def fileupload():
