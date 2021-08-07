@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="680" alt="DevAssist" src="https://cdn.discordapp.com/attachments/870251255115681813/871710728330047528/Screenshot_303.png">
+  <img width="680" alt="DevAssist" src="https://media.discordapp.net/attachments/870251255115681813/873168512514949120/Devassist.png?width=775&height=517">
 </div>
 
 <br /><br />
@@ -9,14 +9,22 @@ DevAssist helps developers to increase thier productivity while prgramming and d
 
 ![Forks](https://img.shields.io/github/forks/MLH-Fellowship/pod-3.1.0-DevAssist?style=social) ![Stars](https://img.shields.io/github/stars/MLH-Fellowship/pod-3.1.0-DevAssist?style=social) ![Watchers](https://img.shields.io/github/watchers/MLH-Fellowship/pod-3.1.0-DevAssist?style=social) ![Top Language](https://img.shields.io/github/languages/top/pod-3.1.0-DevAssist/FellowStories) ![Languages](https://img.shields.io/github/languages/count/MLH-Fellowship/pod-3.1.0-DevAssist) ![Issues](https://img.shields.io/github/issues/MLH-Fellowship/pod-3.1.0-DevAssist) ![PRs](https://img.shields.io/github/issues-pr-raw/MLH-Fellowship/pod-3.1.0-DevAssist) ![MIT License](https://img.shields.io/github/license/MLH-Fellowship/pod-3.1.0-DevAssist) ![activity](https://img.shields.io/github/commit-activity/m/MLH-Fellowship/FellowStories) ![contributors](https://img.shields.io/github/contributors-anon/MLH-Fellowship/pod-3.1.0-DevAssist) ![size](https://img.shields.io/github/languages/code-size/MLH-Fellowship/pod-3.1.0-DevAssist) ![lines](https://img.shields.io/tokei/lines/github/MLH-Fellowship/pod-3.1.0-DevAssist)
 
- 
+
+ <p align="center">
+  <a href="#features">Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#team">Team</a>
+</p>
 
 ## Inspiration
 Often times, Developers face a lot of challenges while building products which slows down their productivity. **DeavAssist**  comes in to help these amazing developers with tools that help make their jobs a lot easier enabling them to focus on more  productive work without doing a lot of repititive tasks. 
 
 
 ## How we built it
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white) ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
+![Python](https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)  
 
 - Python (Flask framework)
 - Javascript
@@ -26,7 +34,7 @@ Often times, Developers face a lot of challenges while building products which s
 - **Web Hosting**: Netlify, .Tech
 
 ## Features
-- ### Website Monitoring 
+- ### Website Blocker 
 Developers often spend a lot of time on the internet and sometimes we end up wasting our time instead of focusing on the task,we actually opened the browser for.This feature helps to improve the productivity of developers by keeping track of his/her website visits and also potentially blocking time-wasting or distracting websites which user wants.
 
 - ### StackOverflow automatic error search.
@@ -35,8 +43,50 @@ It is boring and time-taking when there are too many errors in the code and you 
 - ### Screen Time Monitoring
 Spending too much time infront of the screen affects developer's health a lot.This feature monitors the time spent by the user at different websites while recording the screentime and allows user to set the time-interval after which he wants to be alerted to take a break from screen, inorder to maintain balance between health and work.
 
-More features to be added.
+## How To Use
+To clone and run this application, you'll need [Git](https://git-scm.com), [Python 3x](https://realpython.com/installing-python/) and [Flask](https://pypi.org/project/Flask/) (which comes with [pip](https://pip.pypa.io/en/stable/getting-started/)) installed on your computer. From your command line:
 
+```bash
+# Clone this repository
+$ git clone https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist.git
+
+# Go into the repository
+$ cd pod-3.1.0-DevAssist
+
+# Install dependencies
+$ pip install Flask
+
+# Run the app
+$ python app.py
+```
+ 
+ - ### Website Blocker 
+ 
+ ```
+ Steps to use the Website Blocker Extension
+ 
+1. Download the blocker.zip file and extract the extension.
+2. Go to the extensions page in google chrome under more options.
+3. Select developer mode and click on load unpacked.
+4. Navigate to the extracted extension folder and select it.
+5. Right click on the extension and select options to access the main options page.
+6. To block a website, type the website url into the input and click on add.
+7. To unblock, select the delete option in the list of blocked websites.
+ ```
+ 
+ - ### Screen Time Monitoring
+ 
+ ```
+ Steps to use the Screen time Extension
+1. Download the screentime.zip file and extract the extension.
+2. Go to the extensions page in google chrome under more options.
+3. Select developer mode and click on load unpacked.
+4. Navigate to the extracted extension folder and select it.
+5. Click on the extension icon to acess the pop up menu.
+6. The extension monitors all visited websites and the time spent on each of them.
+7. Click on load times to display your screen time for the websites sorted in descending order.
+8. Click on clear times to clear your history of screen time on these websites.
+ ```
  
 ## MLH Pre-Fellowship( Summer 2021)
 
@@ -44,7 +94,7 @@ More features to be added.
 
 [![MLH Fellowship](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_photos/001/113/145/datas/full_width.jpg)](https://github.com/MLH-Fellowship)
 
-## Team:
+## Team
 
 > "Alone we can do so little; together we can do so much."
 
@@ -77,20 +127,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </tbody></table>
 
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
-[![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist)
-[![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist)
-[![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist)
-[![ForTheBadge uses-js](http://ForTheBadge.com/images/badges/uses-js.svg)](https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist)
-
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist)
-[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist)
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist)
 
 ---
