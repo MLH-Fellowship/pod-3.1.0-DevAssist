@@ -1,3 +1,7 @@
+window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+
 function test(){
     var tabsNewAnim = $('#navbarSupportedContent');
     var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
