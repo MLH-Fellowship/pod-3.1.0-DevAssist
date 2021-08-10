@@ -15,36 +15,7 @@
    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-mainbg">
-        <a class="navbar-brand navbar-logo " href="#">DEVASSIST</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <div class="hori-selector">
-                    <div class="left"></div>
-                    <div class="right"></div>
-                </div>
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">
-                        HOME
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">
-                        PROJECTS
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/team">
-                        TEAM
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  {% include 'Includes/navbar.html' %}
     <section id="team" class="team content-section">
         <div class="container">
           <div class="row text-center">
@@ -132,28 +103,7 @@
           </div>
         </div>
       </section>
-      <footer>
-        <div class="sm-handle">
-            <a href="https://www.instagram.com/" class="sm-button">
-                <i  style="color:palevioletred" class="fab fa-instagram fa-2x"> </i>
-            </a>
-            <a href="https://www.linkedin.com/" class="sm-button">
-                <i style="color:blue" class="fab fa-linkedin fa-2x"> </i>
-            </a>
-            <a href="https://www.facebook.com/" class="sm-button">
-                <i style="color:rgb(6, 55, 95)" class="fab fa-facebook-f fa-2x"> </i>
-            </a>
-            <a href="https://www.twitter.com/" class="sm-button">
-                <i style="color:rgb(20, 140, 238)" class="fab fa-twitter fa-2x"> </i>
-            </a>
-            <a href="https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist" class="sm-button">
-                <i style="color:purple" class="fab fa-github fa-2x"> </i>
-            </a>
-        </div>
-        <p class="copyright">&copy Copyright 2021 | <a href="">❤️ Team 3 from pod 3.1.0(Recursive Rhinos)</a>
-        </p>
-
-    </footer>
+      {% include 'Includes/footer.html' %}
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
