@@ -38,7 +38,7 @@ div.msg_bbl {
     15px 15px 15px rgba(0, 0, 0, 0.1) inset !important;
   }
   button {
-    padding: 1.5em 5em;
+   padding: 1em 3em;
     background: #f5eee5;
     border: none;
     border-radius: .5rem;
@@ -49,12 +49,12 @@ div.msg_bbl {
     text-align: center;
     outline: none;
     cursor: pointer;
-    width:100%;
+    width: 100%;
     transition: .2s ease-in-out;
-    box-shadow: -6px -6px 14px #F0EDE9,
-                -6px -6px 10px #F9EFE0,
-                6px 6px 8px #f8f4ee,
-                6px 6px 10px #D2B289;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+                -6px -6px 10px rgba(255, 255, 255, .5),
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
   }
   button:hover {
     box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
@@ -68,7 +68,6 @@ div.msg_bbl {
                 inset 2px 2px 2px rgba(255, 255, 255, .075),
                 inset 2px 2px 4px rgba(0, 0, 0, .15);
   }
- 
   h1{
     font-family: consolas !important;
     font-size: xx-large !important;
@@ -137,8 +136,8 @@ div.msg_bbl {
         margin: 0px 10px 0px;
         border: 1px solid #bababa;
         border-radius: 100%;
-        width: 3rem !important;
-        height: 3rem !important;
+        width: 2rem !important;
+        height: 2rem !important;
         display: flex;
         align-items: center;
         justify-content: center;
