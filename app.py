@@ -22,12 +22,12 @@ def messageRecived():
 
 @app.route('/')
 def index():
-    return render_template('landingPage.html')
-
-
-@app.route('/home')
-def home():
     return render_template('home.html')
+
+
+@app.route('/landingPage')
+def home():
+    return render_template('landingPage.html')
 
 
 @app.route('/team')
