@@ -31,8 +31,15 @@ h1{
   font-family: consolas;
   font-size: xx-large;
 }
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #fdf4f4 !important;
+  padding: 2px;
+  font-size: 105%;
+}
 p{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
 }
 .container {
