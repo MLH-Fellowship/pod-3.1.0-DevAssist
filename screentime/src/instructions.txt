@@ -1,0 +1,9 @@
+Steps to use the Screen time Extension
+1. Download the zip file and extract the extension.
+2. Go to the extensions page in google chrome under more options.
+3. Select developer mode and click on load unpacked.
+4. Navigate to the extracted extension folder and select it.
+5. Click on the extension icon to acess the pop up menu.
+6. The extension monitors all visited websites and the time spent on each of them.
+7. Click on load times to display your screen time for the websites sorted in descending order.
+8. Click on clear times to clear your history of screen time on these websites.  
