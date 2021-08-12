@@ -1,7 +1,8 @@
 div.msg_bbl {
     background-color: white;
     padding: 3px 3px;
-    height:3em !important;
+    font-size: .5em !important;
+    height:2em !important;
     border-radius: 25px 25px 25px 0px;
     color: rgb(7, 7, 7);
     margin-bottom: 5px;
