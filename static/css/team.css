@@ -336,3 +336,6 @@ footer{
 section{
   margin-bottom: 70px !important;
 }
+.navbar, ::after, ::before {
+  border-style: none !important;
+}
