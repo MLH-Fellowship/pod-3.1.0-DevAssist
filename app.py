@@ -108,6 +108,16 @@ def download():
     path = "screentime.zip"
     return send_file(path, as_attachment=True)
 
+@app.route('/Batrim')
+def batrim():
+    return render_template('batteryReminder.html')
+
+
+@app.route('/downloadBr')
+def downloadBr():
+    path = "BatteryReminder.zip"
+    return send_file(path, as_attachment=True)
+
 
 @socketio.on('my event')
 def handle_my_custom_event(json):
