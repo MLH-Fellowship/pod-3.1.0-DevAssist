@@ -163,7 +163,7 @@ Developers Chat Room feature of DEVASSIST provides a platform for live group cha
 
 > This is a hackathon project made by MLH Fellows - Pod 3.1.0 i.e. Recursive Rhinos - Team 3
 
-[![MLH Fellowship](![image](static/images/mlh_banner.png))]
+<img src="static/images/mlh_banner.png" alt="MLH Banner">
 
 ## Team
 
