@@ -10,7 +10,7 @@ DevAssist helps developers to increase thier productivity while prgramming and d
 
 
  <p align="center">
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#how-to-use-the-application">How To Use</a> •
   <a href="#features">Features</a> •
   <a href="#team">Team</a>
 </p>
@@ -149,7 +149,7 @@ Developers Chat Room feature of DEVASSIST provides a platform for live group cha
   * Steps to use the script
     * * Download the zip file and extract the script.
     * * Install the dependencies using the requirements.txt file.
-    * * Create a free ttrial Twilio Account if you want to get sms notifications.
+    * * Create a free trial Twilio Account if you want to get sms notifications.
     * * Add your Twilio account credentials in the script(wherever mentioned).
     * * You can run the script(batteryReminder.pyw) in the background whenever you plug in your charge Or you can simply paste the it in startup folder so that everytime you open your laptop, this script starts running automatically.
 </details>
