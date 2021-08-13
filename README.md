@@ -1,12 +1,13 @@
 <div align="center">
   <img width="680" height="300" alt="DevAssist" src="https://media.discordapp.net/attachments/870251255115681813/873168512514949120/Devassist.png?width=775&height=517">
-</div>
 
-<br /><br />
-# DevAssist
+
+<br><br>
+# DevAssist 
+  </div>
 DevAssist helps developers to increase thier productivity while prgramming and development. It is a portal whcih provides different tools to the developers which can help significantly in easing thier work and increasing efficiency too.
 
-![Forks](https://img.shields.io/github/forks/MLH-Fellowship/pod-3.1.0-DevAssist?style=social) ![Stars](https://img.shields.io/github/stars/MLH-Fellowship/pod-3.1.0-DevAssist?style=social) ![Watchers](https://img.shields.io/github/watchers/MLH-Fellowship/pod-3.1.0-DevAssist?style=social) ![Top Language](https://img.shields.io/github/languages/top/pod-3.1.0-DevAssist/FellowStories)  ![Issues](https://img.shields.io/github/issues/MLH-Fellowship/pod-3.1.0-DevAssist) ![PRs](https://img.shields.io/github/issues-pr-raw/MLH-Fellowship/pod-3.1.0-DevAssist) ![MIT License](https://img.shields.io/github/license/MLH-Fellowship/pod-3.1.0-DevAssist) ![activity](https://img.shields.io/github/commit-activity/m/MLH-Fellowship/FellowStories) ![contributors](https://img.shields.io/github/contributors-anon/MLH-Fellowship/pod-3.1.0-DevAssist) ![size](https://img.shields.io/github/languages/code-size/MLH-Fellowship/pod-3.1.0-DevAssist) ![lines](https://img.shields.io/tokei/lines/github/MLH-Fellowship/pod-3.1.0-DevAssist)
+![Forks](https://img.shields.io/github/forks/MLH-Fellowship/pod-3.1.0-DevAssist?style=social) ![Stars](https://img.shields.io/github/stars/MLH-Fellowship/pod-3.1.0-DevAssist?style=social) ![Watchers](https://img.shields.io/github/watchers/MLH-Fellowship/pod-3.1.0-DevAssist?style=social) ![Issues](https://img.shields.io/github/issues/MLH-Fellowship/pod-3.1.0-DevAssist) ![PRs](https://img.shields.io/github/issues-pr-raw/MLH-Fellowship/pod-3.1.0-DevAssist) ![MIT License](https://img.shields.io/github/license/MLH-Fellowship/pod-3.1.0-DevAssist)  ![contributors](https://img.shields.io/github/contributors-anon/MLH-Fellowship/pod-3.1.0-DevAssist) ![size](https://img.shields.io/github/languages/code-size/MLH-Fellowship/pod-3.1.0-DevAssist) ![lines](https://img.shields.io/tokei/lines/github/MLH-Fellowship/pod-3.1.0-DevAssist)
 
 
  <p align="center">
@@ -48,7 +49,8 @@ $ pip install -r requirements.txt
 $ py app.py
 ```
 ## Features
-<details><summary>Auto Error Checker </summary>
+<details><summary>Stack Overflow Auto Error Check 📁</summary>
+  
 <p>It is boring and time-taking when there are too many errors in the code and you have to debug each and every error one by one.This feature eases the process a lot. It allows user to upload the file and displays all the errors in the code along with automatically opening the StackOverflow solution blogs for those corresponding errors in the browser itself.</p>
   
   
@@ -61,7 +63,8 @@ $ py app.py
 
 ---
 
-<details><summary>Website Blocker (Chrome Extension)</summary>
+<details><summary>Website Blocker (Chrome Extension) 🚫</summary>
+  
 <p>Developers often spend a lot of time on the internet and sometimes we end up wasting our time instead of focusing on the task,we actually opened the browser for.This feature helps to improve the productivity of developers by keeping track of his/her website visits and also potentially blocking time-wasting or distracting websites which user wants.</p>
   
   
@@ -83,7 +86,8 @@ $ py app.py
 
 ---
 
-<details><summary>Website Monitor (Chrome Extension)</summary>
+<details><summary>Website Monitor (Chrome Extension) 💻</summary>
+  
 <p>Spending too much time infront of the screen affects developer's health a lot.This feature monitors the time spent by the user at different websites while recording the screentime and allows user to set the time-interval after which he wants to be alerted to take a break from screen, inorder to maintain balance between health and work.</p>
 
   
@@ -107,7 +111,8 @@ $ py app.py
 
 ---
 
-<details><summary>Developer Chat</summary>
+<details><summary>Developer Chat Room 💬</summary>
+  
 Developers Chat Room feature of DEVASSIST provides a platform for live group chating with developers to share their thoughts. Now you don't have to wait for the answer solutions after posting doubts on stackOverflow, just drop a message in the chat room and get to discuss it instantly with others.
   <br>
   Now you don't have to wait for the answer solutions after posting doubts on stackOverflow, just drop a message in the chat room and get to discuss it instantly with others.
@@ -116,7 +121,8 @@ Developers Chat Room feature of DEVASSIST provides a platform for live group cha
 
 ---
 
-<details><summary>Boilerplate Generator</summary>
+<details><summary>Boilerplate Generator ✏️</summary>
+  
  <p>It is a tedious task of writing code for full stack appliaction from scratch. Use these boilerplates for your next web application !!</p>
 
   
@@ -143,7 +149,8 @@ Developers Chat Room feature of DEVASSIST provides a platform for live group cha
 
 ---
 
-<details><summary>Battery Reminder</summary>
+<details><summary>Battery Reminder 🔋</summary>
+  
  <p>As a laptop user you must take caution about your battery because the battery is also the most important component If you are using an old laptop then you might be a wonder to protect your battery from getting overcharged! This Battery Reminder feature helps you to get varoius notifications (like desktop, SMS, notifications and even voice reminders), when your laptop get 100% charged and your charger is still plugged in.</p>
   
   * Steps to use the script
