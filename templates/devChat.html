@@ -1,84 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DevAssist | Developers Chat Room</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/css/devChat.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <style>
-      div.msg_bbl {
-        background-color: #ddd;
-        padding: 5px 10px;
-        border-radius: 10px;
-        color: #555;
-        margin-bottom: 5px;
-      }
-    </style>
-  </head>
-  <body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 
-    <div class="text-center well"><b>Developers Chat Room</b></div>
-    <p>Do you like to interact with like minded people, and want to learn and share new technology and development hacks?</p>
-    <p>Developers Chat Room feature of DEVASSIST provides a platform for live group chating with developers to share their thoughts.</p>
-      <p> Now you don't have to wait for the answer solutions after posting doubts on stackOverflow, just drop a message 
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>DevAssist | Developers Chat Room</title>
+</head>
+
+<body>
+  {% include 'Includes/navbar.html' %}
+  <div class="container">
+    <div class="box shadow-4">
+      <div class="text-center well"> Developers Chat Room</div>
+      <hr>
+      <p>Do you like to interact with like minded people, and want to learn and share new technology and development
+        hacks?</p>
+      <p>Developers Chat Room feature of DEVASSIST provides a platform for live group chating with developers to share
+        their thoughts.</p>
+      <p> Now you don't have to wait for the answer solutions after posting doubts on stackOverflow, just drop a message
         in the chat room and get to discuss it instantly with others.</p>
 
-    <div class="container">
+    </div>
+
+  </div>
+  <center>
+    <div class="text-center well hero" style=" font-family: consolas !important;
+    font-size: xx-large !important;">Chat Room Area<img
+        src="https://img.icons8.com/ios-glyphs/30/000000/filled-chat.png" /></div>
+    <hr style="width: 50% !important;">
+  </center>
+  <div class="container" style="margin-bottom: 8%;">
+    <div class="box shadow-2">
+
       <div class="col-sm-8">
         <div class="no_message">
-          <h1 style='color: #ccc'>No messages yet..</h1>
+          <h1 style='color: rgb(8, 8, 8)'>No messages yet..</h1>
           <div class="message_holder"></div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <form action="">
-          <b>Type your message below <span class="glyphicon glyphicon-arrow-down"></span></b>
-          <div class="clearfix" style="margin-top: 5px;"></div>
-          <input type="text" class="username form-control" placeholder="User Name">
-          <div style="padding-top: 5px;"></div>
-          <input type="text" class="message form-control" placeholder="Messages">
-          <div style="padding-top: 5px;"></div>
-          <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-send"></span> Send</button>
-        </form>
-      </div>
     </div>
+    <div class="col-sm-4">
+      <form action="">
+        <div class="clearfix" style="margin-top: 15px"></div>
+        <input type="text" class="username form-control" placeholder="User Name">
+        <div style="padding-top: 15px;"></div>
+        <input type="text" class="message form-control" placeholder="Messages">
+        <div style="padding-top: 15px;"></div>
+        <button type="submit"><img src="https://img.icons8.com/material-rounded/24/000000/filled-sent.png" /><span
+            class="glyphicon glyphicon-send"></span> Send</button>
+      </form>
+    </div>
+  </div>
+  {% include 'Includes/footer.html' %}
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="../static/js/main.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.min.js"
+    integrity="sha512-fB746S+jyTdN2LSWbYSGP2amFYId226wpOeV4ApumcDpIttPxvk1ZPOgnwqwQziRAtZkiFJVx9F64GLAtoIlCQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var socket = io.connect('http://' + document.domain + ':' + location.port);
+    // broadcast a message
+    socket.on('connect', function () {
+      socket.emit('my event', {
+        data: 'User Connected'
+      })
+      var form = $('form').on('submit', function (e) {
+        e.preventDefault()
+        let user_name = $('input.username').val()
+        let user_input = $('input.message').val()
+        socket.emit('my event', {
+          user_name: user_name,
+          message: user_input
+        })
+        // empty the input field
+        $('input.message').val('').focus()
+      })
+    })
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.min.js" integrity="sha512-fB746S+jyTdN2LSWbYSGP2amFYId226wpOeV4ApumcDpIttPxvk1ZPOgnwqwQziRAtZkiFJVx9F64GLAtoIlCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      var socket = io.connect( 'http://' + document.domain + ':' + location.port );
-      // broadcast a message
-      socket.on( 'connect', function() {
-        socket.emit( 'my event', {
-          data: 'User Connected'
-        } )
-        var form = $( 'form' ).on( 'submit', function( e ) {
-          e.preventDefault()
-          let user_name = $( 'input.username' ).val()
-          let user_input = $( 'input.message' ).val()
-          socket.emit( 'my event', {
-            user_name : user_name,
-            message : user_input
-          } )
-          // empty the input field
-          $( 'input.message' ).val( '' ).focus()
-        } )
-      } )
+    // capture message
+    socket.on('my response', function (msg) {
+      //console.log( msg )
+      if (typeof msg.user_name !== 'undefined') {
+        $('h1').remove()
+        $('div.message_holder').append('<div class="msg_bbl"><b style="color: #000">' + msg.user_name + '</b> ' + msg.message + '</div>')
+      }
+    })
+  </script>
+</body>
 
-      // capture message
-      socket.on( 'my response', function( msg ) {
-        //console.log( msg )
-        if( typeof msg.user_name !== 'undefined' ) {
-          $( 'h1' ).remove()
-          $( 'div.message_holder' ).append( '<div class="msg_bbl"><b style="color: #000">'+msg.user_name+'</b> '+msg.message+'</div>' )
-        }
-      } )
-    </script>
-  </body>
 </html>

@@ -1,0 +1,19 @@
+{
+    "name": "Screen Time",
+    "manifest_version": 2,
+    "version": "0.1.0",
+    "description": "Monitors Screen time on website",
+    "permissions": ["activeTab", "declarativeContent", "storage", "tabs"],
+     "background": {
+         "scripts": ["background.js"],
+         "persistent": false
+     },
+     "page_action":{
+         "default_popup": "popup.html"
+     },
+     "icons": {
+        "128": "icon_128.png"
+     },
+     "options_page": "options.html"
+
+}

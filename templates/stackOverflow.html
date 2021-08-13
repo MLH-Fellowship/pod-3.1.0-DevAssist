@@ -2,11 +2,18 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>DevAssist | Auto Error Check</title>
     <link rel="stylesheet" href="../static/css/stackOverflow.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 </head>
 
 <body>
+    {% include 'Includes/navbar.html' %}
     <div id=content>
         <div class="glass">
             <h1>StackOverflow Automatic Error Check</h1>
@@ -38,7 +45,7 @@
 
     </div>
 
-    <div id=content style="width:30%">
+    <div class="fit" id=content style="width:30%">
         <div class="glass">
             <form method="POST" action="/search" enctype="multipart/form-data">
                 <p><input type="file" name="file" id="choose"></p>
@@ -62,5 +69,14 @@
             </p>
         </div>
     </div>
+    {% include 'Includes/footer.html' %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="../static/js/main.js"></script>
 </body>
+
 </html>

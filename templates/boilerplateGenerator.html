@@ -13,96 +13,61 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-   
-  
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-mainbg">
-        <a class="navbar-brand navbar-logo " href="#">DEVASSIST</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <div class="hori-selector">
-                    <div class="left"></div>
-                    <div class="right"></div>
-                </div>
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">
-                        HOME
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#projects">
-                        PROJECTS
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/team">
-                        TEAM
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-<div class="new">
-    <div class="container">
-        <div class="box shadow-4">
-            <h1>Boilerplate Generator</h1>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatibus.</p>
-        </div>
-        <div class="box shadow-2">
-            <h1>React-Flask Boilerplate</h1>
-            <hr>
-            <a href="/react-flask" target="blank"><button class="button1">DOWNLOAD</button></a>
-            
-        </div>
-        <div class="box shadow-2">
-            <h1>React-Node Boilerplate</h1>
-            <hr>
-            <a href="/react-node" target="blank"><button class="button1">DOWNLOAD</button></a>
-            
-        </div>
-        <div class="box shadow-2">
-            <h1>React-Flask Boilerplate</h1>
-            <hr>
-            <a href="/react-django" target="blank"><button class="button1">DOWNLOAD</button></a>
-            
-        </div>
-    </div>
-</div>
-<footer>
-    <div class="sm-handle">
-        <a href="https://www.instagram.com/" class="sm-button">
-            <i style="color:palevioletred" class="fab fa-instagram"> </i>
-        </a>
-        <a href="https://www.linkedin.com/" class="sm-button">
-            <i style="color:blue" class="fab fa-linkedin"> </i>
-        </a>
-        <a href="https://www.facebook.com/" class="sm-button">
-            <i style="color:rgb(6, 55, 95)" class="fab fa-facebook-f"> </i>
-        </a>
-        <a href="https://www.twitter.com/" class="sm-button">
-            <i style="color:rgb(20, 140, 238)" class="fab fa-twitter"> </i>
-        </a>
-        <a href="https://github.com/MLH-Fellowship/pod-3.1.0-DevAssist" class="sm-button">
-            <i style="color:purple" class="fab fa-github"> </i>
-        </a>
-    </div>
-    <p class="copyright">&copy Copyright 2021 | <a href="">❤️ Team 3 from pod 3.1.0(Recursive Rhinos)</a>
-    </p>
+    {% include 'Includes/navbar.html' %}
+    <div class="new">
+        <div class="container">
+            <div class="box shadow-4">
+                <h1>Boilerplate Generator</h1>
+                <hr>
+                <p>Bored of writing code for full stack appliaction from scratch. Use these boilerplates for your next
+                    web application !!
+                    <br>
+                    Simply download the zip file and get a copy of boilerplate.
+                    <br>
+                    Then run <code>docker-compose build</code> .<br>This spins up Compose and builds a local development
+                    environment according to our specifications in docker-compose.yml.
+                    <br>
+                    After the containers have been built , run
+                    <code>docker-compose up</code>.
 
-</footer>
+                </p>
+            </div>
+            <div class="box shadow-2">
+                <h1>React-Flask Boilerplate</h1>
+                <hr>
+                <p>Development environment for a web application running a React front-end and Flask API back-end. </p>
+                <a href="/react-flask" target="blank"><button class="button1">DOWNLOAD</button></a>
+
+            </div>
+            <div class="box shadow-2">
+                <h1>React-Django Boilerplate</h1>
+                <hr>
+                <p>Development environment for a web application running a React front-end and Django back-end.</p>
+
+                <a href="/react-django" target="blank"><button class="button1">DOWNLOAD</button></a>
+
+            </div>
+            <div class="box shadow-2">
+                <h1>React-Node Boilerplate</h1>
+                <hr>
+                <p>Development environment for a web application running a React front-end, Node(express) back-end and
+                    Mongo database.</p>
+                <a href="/react-node" target="blank"><button class="button1">DOWNLOAD</button></a>
+
+            </div>
+            
+        </div>
+    </div>
+    {% include 'Includes/footer.html' %}
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
     <script src="../static/js/main.js"></script>
 </body>
 

@@ -22,12 +22,12 @@ def messageRecived():
 
 @app.route('/')
 def index():
-    return render_template('landingPage.html')
-
-
-@app.route('/home')
-def home():
     return render_template('home.html')
+
+
+@app.route('/landingPage')
+def home():
+    return render_template('landingPage.html')
 
 
 @app.route('/team')
@@ -71,25 +71,25 @@ def search():
 
 @app.route('/download')
 def download_file():
-    path = "blocker.zip"
+    path = "imports/zip_files/blocker.zip"
     return send_file(path, as_attachment=True)
 
 
 @app.route('/react-flask')
 def download_file_1():
-    path = "boilerplates/react-flask-boilerplate.zip"
+    path = "imports/zip_files/boilerplates/react-flask-boilerplate.zip"
     return send_file(path, as_attachment=True)
 
 
 @app.route('/react-node')
 def download_file_2():
-    path = "boilerplates/react-node-boilerplate.zip"
+    path = "imports/zip_files/boilerplates/react-node-boilerplate.zip"
     return send_file(path, as_attachment=True)
 
 
 @app.route('/react-django')
 def download_file_3():
-    path = "boilerplates/react-django-boilerplate.zip"
+    path = "imports/zip_files/boilerplates/react-django-boilerplate.zip"
     return send_file(path, as_attachment=True)
 
 
@@ -105,7 +105,17 @@ def webmon():
 
 @app.route('/downloadWm')
 def download():
-    path = "screentime.zip"
+    path = "imports/zip_files/screentime.zip"
+    return send_file(path, as_attachment=True)
+
+@app.route('/Batrim')
+def batrim():
+    return render_template('batteryReminder.html')
+
+
+@app.route('/downloadBr')
+def downloadBr():
+    path = "imports/zip_files/BatteryReminder.zip"
     return send_file(path, as_attachment=True)
 
 
@@ -117,5 +127,5 @@ def handle_my_custom_event(json):
 
 if __name__ == '__main__':
     socketio.run(app)
-    # app.run(debug=True)
+    #socketio.run(app, debug=True)
     # app.run()
